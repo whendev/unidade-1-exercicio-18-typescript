@@ -1,0 +1,28 @@
+{
+  "name": "unidade-1-exercicio-18-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "jest --no-cache"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/whendev/unidade-1-exercicio-18-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/whendev/unidade-1-exercicio-18-typescript/issues"
+  },
+  "homepage": "https://github.com/whendev/unidade-1-exercicio-18-typescript#readme",
+  "devDependencies": {
+    "jest": ">=25.1.0",
+    "ts-jest": ">=25.2.0",
+    "@types/jest": ">=25.1.2"
+  },
+  "dependencies": {
+    "typescript": "4.0.2"
+  }
+}
