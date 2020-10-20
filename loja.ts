@@ -4,12 +4,13 @@ import { Venda } from "./venda";
 export class Loja {
 
     constructor(public nome_loja: string, public endereco: Endereco,
-        public telefone: string, public observacao: string, public cnpj: string, public inscricao_estadual: string, public vendas: Array<Venda> = []) { 
+        public telefone: string, public observacao: string, public cnpj: string,
+         public inscricao_estadual: string, public vendas: Array<Venda> = []) { 
         }
     
         
-    public vender(datahora: string, ccf: string, coo: string): Venda{
-        let venda = new Venda(this, datahora, ccf, coo);
+    public vender(datahora: string, ccf: string, coo: string, operador: string, impressora_fiscal): Venda{
+        let venda = new Venda(this, datahora, ccf, coo, operador, impressora_fiscal);
         this.vendas.push(venda);
         return venda;
     }

@@ -3,11 +3,11 @@ export class Endereco {
   constructor(public logradouro: string, public numero: number, public complemento: string,
       public bairro: string, public municipio: string, public estado: string, public cep: string) { }
 
-   public isNullOrEmpty(s: String): boolean {
+   private isNullOrEmpty(s: String): boolean {
       return s == null || s.length == 0;
   }
 
-  public validar_campos_obrigatorios(): void{
+  private validar_campos_obrigatorios(): void{
       
       if (this.logradouro == "") {
           throw new Error(`O campo logradouro do endereço é obrigatório`);
